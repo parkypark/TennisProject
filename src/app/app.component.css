@@ -1,0 +1,23 @@
+.container{
+	margin-top: 10px;
+}
+
+.header img{
+	width: 42px; /* I took the width from your post and placed it in css */
+   	height: 42px;
+}
+
+
+.header{
+	height: 60px;
+	vertical-align: text-bottom;
+}
+
+.header-buttons{
+   
+
+}
+
+.container nav a{
+	color :white;
+}
