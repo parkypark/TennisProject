@@ -1,3 +1,10 @@
-<p>
-  index works!
-</p>
+<div class = "main">
+	<div *ngFor = "let shoppingItem of shoppingItemArr" class="card" style="width:400px">
+	  <img class="card-img-top" src="assets/img/{{shoppingItem.imageurl}}"style="width:100px;height:100px" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">{{shoppingItem.itemName}}</h5>
+	    <p class="card-text">{{shoppingItem.description}}</p>
+	    <a href="#" class="btn btn-primary">Go somewhere</a>
+	  </div>
+	</div>
+</div>

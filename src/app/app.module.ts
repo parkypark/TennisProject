@@ -5,11 +5,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { pageNonFoundComponent } from './pageNonFound/pageNonFound.component';
 
-
+import { HttpClientModule } from '@angular/common/http';
 import { IndexComponent } from './index/index.component';
 import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
-
+import { AppService } from './service/api.service';
 const appRoutes: Routes = [
   {path: 'main', component: IndexComponent},
   { path: '',
@@ -28,6 +28,7 @@ const appRoutes: Routes = [
     EditComponent
   ],
   imports: [
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing:true }
@@ -35,6 +36,6 @@ const appRoutes: Routes = [
     BrowserModule
   ],
   bootstrap: [ AppComponent ],
-  providers: []
+  providers: [AppService]
 })
 export class AppModule { }
