@@ -1,3 +1,7 @@
+import { Injectable } from '@angular/core';
+
+
+@Injectable()
 export class ShoppingItem {
 	private _itemId :Number;
 	private _itemName:String;
@@ -46,7 +50,8 @@ export class ShoppingItem {
 	get created_at(): String{
 	 	return this._created_at;
 	}
-	set created_at(thatCreated_at : Number) {
-		this._created_at = thatCreated_at;
+	set created_at(thatCreated_at : String) {
+		
+		._created_at = thatCreated_at;
 	}
 }

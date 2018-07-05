@@ -27,8 +27,6 @@ export class IndexComponent implements OnInit {
             _.mapValues(data.shoppingitem, function(o) {
 
               let temp = new ShoppingItem(o.id,o.itemname,o.imageUrl,o.description,o.price,o.created_at);
-              console.log(o);
-              console.log(temp);
               tempArr.push(temp);
               
             });

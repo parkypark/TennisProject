@@ -6,7 +6,6 @@
     "module": "commonjs",
     "types": []
   },
-  
   "exclude": [  
     "node_modules",
 
